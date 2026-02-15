@@ -1,195 +1,203 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>¿Quieres ser mi San Valentín?</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>¿Quieres ser mi San Valentín?</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
 
-    body {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-      overflow: hidden;
-    }
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
 
-    .card {
-      background: white;
-      padding: 40px 30px;
-      border-radius: 25px;
-      text-align: center;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-      max-width: 420px;
-      width: 90%;
-      position: relative;
-      animation: fadeIn 1.5s ease;
-    }
+body{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+  overflow:hidden;
+}
 
-    h1 {
-      font-family: 'Great Vibes', cursive;
-      font-size: 40px;
-      color: #ff4d6d;
-      margin-bottom: 10px;
-    }
+.card{
+  background:white;
+  padding:40px 30px;
+  border-radius:25px;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+  max-width:420px;
+  width:90%;
+  position:relative;
+  animation:fadeIn 1.5s ease;
+}
 
-    p {
-      font-size: 18px;
-      color: #555;
-      margin-bottom: 20px;
-    }
+h1{
+  font-family:'Great Vibes',cursive;
+  font-size:40px;
+  color:#ff4d6d;
+  margin-bottom:10px;
+}
 
-    .photos {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      margin-bottom: 20px;
-    }
+p{
+  font-size:18px;
+  color:#555;
+  margin-bottom:20px;
+}
 
-    .photos img {
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 20px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    }
+.photos{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin-bottom:20px;
+}
 
-    .buttons {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      margin-top: 10px;
-    }
+.photos img{
+  width:120px;
+  height:120px;
+  object-fit:cover;
+  border-radius:20px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
 
-    button {
-      border: none;
-      padding: 12px 22px;
-      border-radius: 25px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
+.buttons{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  margin-top:10px;
+}
 
-    .yes {
-      background: #ff4d6d;
-      color: white;
-    }
+button{
+  border:none;
+  padding:12px 22px;
+  border-radius:25px;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.3s;
+}
 
-    .yes:hover {
-      background: #ff1e4d;
-      transform: scale(1.05);
-    }
+.yes{
+  background:#ff4d6d;
+  color:white;
+}
 
-    .no {
-      background: #eee;
-      color: #555;
-      position: relative;
-    }
+.yes:hover{
+  background:#ff1e4d;
+  transform:scale(1.05);
+}
 
-    .message {
-      margin-top: 20px;
-      font-size: 18px;
-      color: #ff4d6d;
-      display: none;
-      animation: fadeIn 1s ease;
-    }
+.no{
+  background:#eee;
+  color:#555;
+}
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+.message{
+  margin-top:20px;
+  font-size:18px;
+  color:#ff4d6d;
+  display:none;
+  animation:fadeIn 1s ease;
+}
 
-    .heart {
-      position: absolute;
-      color: rgba(255, 77, 109, 0.6);
-      animation: floatUp 6s linear infinite;
-    }
+@keyframes fadeIn{
+  from{opacity:0;transform:translateY(10px);}
+  to{opacity:1;transform:translateY(0);}
+}
 
-    @keyframes floatUp {
-      from {
-        transform: translateY(100vh) scale(1);
-        opacity: 1;
-      }
-      to {
-        transform: translateY(-10vh) scale(1.5);
-        opacity: 0;
-      }
-    }
-  </style>
+.heart{
+  position:absolute;
+  color:rgba(255,77,109,0.6);
+  animation:floatUp 6s linear infinite;
+}
+
+@keyframes floatUp{
+  from{
+    transform:translateY(100vh) scale(1);
+    opacity:1;
+  }
+  to{
+    transform:translateY(-10vh) scale(1.5);
+    opacity:0;
+  }
+}
+</style>
 </head>
+
 <body>
 
-  <!-- Audio optimizado para móvil -->
-  <audio id="music" src="Cancion.mp3" preload="auto" loop></audio>
+<!-- AUDIO con control anti-caché -->
+<audio id="music" preload="auto" loop>
+  <source src="Cancion.mp3?v=2" type="audio/mpeg">
+</audio>
 
-  <div class="card">
-    <h1>Celitos ❤️ Ronquitos</h1>
+<div class="card">
+<h1>Celitos ❤️ Ronquitos</h1>
 
-    <div class="photos">
-      <img src="Foto1.jpg" alt="Celitos">
-      <img src="Foto2.jpg" alt="Ronquitos">
-    </div>
+<div class="photos">
+  <img src="Foto1.jpg?v=2" alt="Celitos">
+  <img src="Foto2.jpg?v=2" alt="Ronquitos">
+</div>
 
-    <p>
-      Desde que llegaste a mi vida todo es más bonito…<br>
-      ❤️ Feliz San Valentín ❤️
-    </p>
+<p>
+Desde que llegaste a mi vida todo es más bonito…<br>
+❤️ Feliz San Valentín ❤️
+</p>
 
-    <div class="buttons">
-      <button class="yes" id="btnYes">¡Sí! 💖</button>
-      <button class="no" onmouseover="moveButton(this)" onclick="moveButton(this)">No 😢</button>
-    </div>
+<div class="buttons">
+<button class="yes" id="btnYes">¡Sí! 💖</button>
+<button class="no" onclick="moveButton(this)">No 😢</button>
+</div>
 
-    <div class="message" id="message">
-      Estoy muy feliz de que tu respuesta fuera que sí, mi buen amor ❤️ este lunes espero poder recibirte con todo el amor del mundo mi ronquitos, por más mujeres que existan eres la única estrella en la que me fijo por más estrellado que sea el cielo nocturno ✨ I love you my wife ❤️
-    </div>
-  </div>
+<div class="message" id="message">
+Estoy muy feliz de que tu respuesta fuera que sí, mi buen amor ❤️ este lunes espero poder recibirte con todo el amor del mundo mi ronquitos, por más mujeres que existan eres la única estrella en la que me fijo ✨ I love you ❤️
+</div>
 
-  <script>
-    const btnYes = document.getElementById("btnYes");
-    const music = document.getElementById("music");
-    const message = document.getElementById("message");
+</div>
 
-    btnYes.addEventListener("click", function() {
-      message.style.display = "block";
+<script>
+const btnYes=document.getElementById("btnYes");
+const music=document.getElementById("music");
+const message=document.getElementById("message");
 
-      music.play().then(() => {
-        console.log("Música reproduciéndose");
-      }).catch(error => {
-        console.log("Error al reproducir:", error);
-      });
+btnYes.addEventListener("click",function(){
+
+  message.style.display="block";
+
+  // Reiniciar audio por seguridad en móvil
+  music.currentTime=0;
+
+  const playPromise=music.play();
+
+  if(playPromise!==undefined){
+    playPromise.catch(error=>{
+      alert("Toca nuevamente la pantalla para activar la música 💖");
     });
+  }
+});
 
-    function moveButton(btn) {
-      const x = Math.random() * 300 - 150;
-      const y = Math.random() * 300 - 150;
-      btn.style.transform = `translate(${x}px, ${y}px)`;
-    }
+function moveButton(btn){
+  const x=Math.random()*200-100;
+  const y=Math.random()*200-100;
+  btn.style.transform=`translate(${x}px,${y}px)`;
+}
 
-    function createHeart() {
-      const heart = document.createElement('div');
-      heart.classList.add('heart');
-      heart.innerHTML = '❤️';
-      heart.style.left = Math.random() * 100 + 'vw';
-      heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
-      document.body.appendChild(heart);
+function createHeart(){
+  const heart=document.createElement('div');
+  heart.classList.add('heart');
+  heart.innerHTML='❤️';
+  heart.style.left=Math.random()*100+'vw';
+  heart.style.fontSize=(Math.random()*20+10)+'px';
+  document.body.appendChild(heart);
 
-      setTimeout(() => {
-        heart.remove();
-      }, 6000);
-    }
+  setTimeout(()=>{heart.remove();},6000);
+}
 
-    setInterval(createHeart, 400);
-  </script>
+setInterval(createHeart,400);
+</script>
 
 </body>
 </html>
